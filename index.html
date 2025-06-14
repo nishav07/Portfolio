@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">
+                    Hello, I'm <span class="highlight">John Doe</span>
+                </h1>
+                <p class="hero-subtitle">Creative Developer & Content Creator</p>
+                <p class="hero-description">
+                    Passionate about creating engaging digital experiences through code and creative content.
+                    Specializing in web development and video production.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="image-wrapper">
+                        <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
+                    </div>
+                </div>
+                
+                <div class="about-text animate-on-scroll">
+                    <h3>Creative Developer & Content Creator</h3>
+                    <p>
+                        I'm a passionate developer with a strong background in web technologies and content creation. 
+                        With years of experience in both technical development and creative storytelling, I bring 
+                        a unique perspective to every project.
+                    </p>
+                    <p>
+                        My journey combines the analytical mindset of a developer with the creative vision of a 
+                        content creator, allowing me to build not just functional applications, but engaging 
+                        digital experiences that resonate with users.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>3+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">What I bring to the table</p>
+            </div>
+            
+            <div class="skills-content">
+                <!-- Creative Skills -->
+                <div class="skills-category animate-on-scroll">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        Creative Skills
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h4>Scripting</h4>
+                            <p>Creative writing and storytelling for various media formats</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Video Editing</h4>
+                            <p>Professional editing for reels and ad videos (30-60 sec)</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h4>Thumbnail Design</h4>
+                            <p>Eye-catching thumbnail designs that drive engagement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="skills-category animate-on-scroll">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML & CSS</h4>
+                            <p>Modern, responsive web design and development</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <p>Interactive frontend development and DOM manipulation</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <p>Server-side development with Express.js and EJS templating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="assets/project1.png" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with modern design and seamless user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-eye"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="assets/project2.png" alt="Video Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Video Portfolio</h3>
+                        <p class="project-description">
+                            Collection of promotional videos and reels showcasing creative editing skills.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Video Editing</span>
+                            <span class="tech-tag">Motion Graphics</span>
+                            <span class="tech-tag">Storytelling</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-eye"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="assets/project3.png" alt="Restaurant Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Restaurant Website</h3>
+                        <p class="project-description">
+                            Modern restaurant website with online ordering and reservation system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">EJS</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-eye"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="assets/project4.png" alt="Content Management">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Content Management</h3>
+                        <p class="project-description">
+                            Custom CMS for managing blog posts and media content with user authentication.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">EJS</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-eye"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="assets/project5.png" alt="Brand Identity">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Brand Identity Design</h3>
+                        <p class="project-description">
+                            Complete brand identity package including logo design and marketing materials.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Logo Design</span>
+                            <span class="tech-tag">Branding</span>
+                            <span class="tech-tag">Graphics</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-eye"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="assets/project6.png" alt="Mobile App UI">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-figma"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile App UI</h3>
+                        <p class="project-description">
+                            User interface design for a fitness tracking mobile application.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">UI Design</span>
+                            <span class="tech-tag">UX Research</span>
+                            <span class="tech-tag">Prototyping</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-eye"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Services Offered</h2>
+                <p class="section-subtitle">How I can help you</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title">Video Editing</h3>
+                    <p class="service-description">
+                        Professional video editing for social media content, advertisements, and promotional videos.
+                        Specializing in short-form content (30-60 seconds).
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Social Media Reels</li>
+                        <li><i class="fas fa-check"></i> Advertisement Videos</li>
+                        <li><i class="fas fa-check"></i> Motion Graphics</li>
+                        <li><i class="fas fa-check"></i> Color Correction</li>
+                    </ul>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Custom website development using modern technologies. From static websites to dynamic 
+                        web applications with full functionality.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                        <li><i class="fas fa-check"></i> Database Integration</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3 class="service-title">Thumbnail Design</h3>
+                    <p class="service-description">
+                        Eye-catching thumbnail designs that increase click-through rates and engagement 
+                        for YouTube videos and social media content.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> YouTube Thumbnails</li>
+                        <li><i class="fas fa-check"></i> Social Media Graphics</li>
+                        <li><i class="fas fa-check"></i> Brand Consistency</li>
+                        <li><i class="fas fa-check"></i> A/B Testing</li>
+                    </ul>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3 class="service-title">Script Writing</h3>
+                    <p class="service-description">
+                        Creative and engaging script writing for videos, advertisements, and digital content 
+                        that captures audience attention and drives action.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Video Scripts</li>
+                        <li><i class="fas fa-check"></i> Ad Copy</li>
+                        <li><i class="fas fa-check"></i> Content Strategy</li>
+                        <li><i class="fas fa-check"></i> Storytelling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Let's discuss your project</h3>
+                    <p>
+                        Ready to bring your ideas to life? I'm here to help you create amazing digital experiences. 
+                        Whether you need web development, video editing, or creative content, let's collaborate!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@johndoe.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-on-scroll">
+                    <form id="contact-form" action="" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 John Doe. All rights reserved.</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
