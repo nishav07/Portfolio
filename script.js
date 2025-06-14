@@ -1,6 +1,5 @@
-// DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all functionality
+    // Init all func()
     initializeLoader();
     initializeNavigation();
     initializeThemeToggle();
@@ -11,11 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeMobileMenu();
 });
 
-// Loading Animation
 function initializeLoader() {
     const loader = document.getElementById('loader');
     
-    // Hide loader after page load
     window.addEventListener('load', function() {
         setTimeout(function() {
             loader.classList.add('fade-out');
@@ -26,12 +23,10 @@ function initializeLoader() {
     });
 }
 
-// Navigation Functionality
 function initializeNavigation() {
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Navbar scroll effect
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -39,11 +34,13 @@ function initializeNavigation() {
             navbar.classList.remove('scrolled');
         }
         
-        // Update active navigation link
         updateActiveNavLink();
     });
     
-    // Update active navigation link based on scroll position
+
+
+
+
     function updateActiveNavLink() {
         const sections = document.querySelectorAll('section[id]');
         const scrollPosition = window.scrollY + 100;
@@ -65,16 +62,20 @@ function initializeNavigation() {
     }
 }
 
-// Theme Toggle Functionality
+
+
+
+
 function initializeThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const themeIcon = themeToggle.querySelector('i');
     
-    // Check for saved theme preference or default to dark mode
+   
     const savedTheme = localStorage.getItem('theme') || 'dark';
     
-    // Apply saved theme
+
+
     if (savedTheme === 'light') {
         body.classList.remove('dark');
         themeIcon.classList.remove('fa-sun');
@@ -85,23 +86,22 @@ function initializeThemeToggle() {
         themeIcon.classList.add('fa-sun');
     }
     
-    // Theme toggle click event
+
+
     themeToggle.addEventListener('click', function() {
         body.classList.toggle('dark');
         
         if (body.classList.contains('dark')) {
-            // Switched to dark mode
             themeIcon.classList.remove('fa-moon');
             themeIcon.classList.add('fa-sun');
             localStorage.setItem('theme', 'dark');
         } else {
-            // Switched to light mode
             themeIcon.classList.remove('fa-sun');
             themeIcon.classList.add('fa-moon');
             localStorage.setItem('theme', 'light');
         }
         
-        // Add rotation animation
+        
         themeToggle.style.transform = 'rotate(360deg)';
         setTimeout(() => {
             themeToggle.style.transform = '';
@@ -109,7 +109,8 @@ function initializeThemeToggle() {
     });
 }
 
-// Smooth Scrolling for Navigation Links
+
+
 function initializeSmoothScrolling() {
     const navLinks = document.querySelectorAll('a[href^="#"]');
     
@@ -128,7 +129,7 @@ function initializeSmoothScrolling() {
                     behavior: 'smooth'
                 });
                 
-                // Close mobile menu if open
+                
                 const navMenu = document.getElementById('nav-menu');
                 const hamburger = document.getElementById('hamburger');
                 navMenu.classList.remove('active');
@@ -138,11 +139,11 @@ function initializeSmoothScrolling() {
     });
 }
 
-// Scroll Animations
+
 function initializeScrollAnimations() {
     const animateElements = document.querySelectorAll('.animate-on-scroll');
     
-    // Intersection Observer for scroll animations
+    
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
