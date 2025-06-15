@@ -126,6 +126,22 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.nav-link:focus,
+.nav-link:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.nav-item:focus,
+.nav-item:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .nav-item {
