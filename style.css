@@ -116,10 +116,26 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-primary);
+    outline: none;
     text-decoration: none;
     transition: color 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
 }
-
+.nav-logo a:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+}
+.nav-logo a:active {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+}
 .nav-menu {
     display: flex;
     list-style: none;
