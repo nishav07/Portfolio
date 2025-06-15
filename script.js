@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Init all func()
+    // Init all func()nnnnnnnn
     initializeLoader();
     initializeNavigation();
     initializeThemeToggle();
