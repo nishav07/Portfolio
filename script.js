@@ -213,7 +213,6 @@ function initializeContactForm() {
             return;
         }
         
-       
 
         showNotification('Thank you! Your message has been sent successfully.', 'success');
         contactForm.reset();
