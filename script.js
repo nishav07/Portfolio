@@ -128,8 +128,6 @@ function initializeSmoothScrolling() {
                     top: offsetTop,
                     behavior: 'smooth'
                 });
-                
-                
                 const navMenu = document.getElementById('nav-menu');
                 const hamburger = document.getElementById('hamburger');
                 navMenu.classList.remove('active');
