@@ -206,6 +206,7 @@ function initializeContactForm() {
             return;
         }
         
+
         if (!isValidEmail(email)) {
             showNotification('Please enter a valid email address.', 'error');
             return;
@@ -222,6 +223,7 @@ function initializeContactForm() {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
+    
     
     
 
